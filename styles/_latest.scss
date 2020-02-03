@@ -1,7 +1,106 @@
 .latest {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
+
+    @include flexContent(column);
+
+    height: 120vh;
+
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        font-size: .5rem;
+        color: #E11C5B;
+        font-weight: 200;
+        letter-spacing: 1px;
+    }
+
+    p {
+        margin-left: -5%;
+        text-align: left;
+        font-family: 'Playfair Display', serif;
+        padding: .5rem;
+    }
+    
+}
+ 
+.arrow {
+    margin-left: 70%;
+}
+
+.card-1, .card-2, .card-3 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 10%;
+    padding: 10%;
+}
+
+.card-1 {
+    background-image: url("../kjd-assets/bg-square-gradient.png");
+}
+
+.card-2 {
+    background-image: url("../kjd-assets/bg-rectangle-gradient.png");
+}
+
+.card-3 {
+    background-image: url("../kjd-assets/bg-circle-gradient.png");
+}
+
+/*************************
+
+Desktop view
+
+*************************/
+
+@media only screen and (min-width: 992px) {
+    .latest {
+
+        display: flex;
+        flex-direction: row;
+        margin: 0 4em;
+        height: 60vh;
+
+        h2 {
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            font-size: .7em;
+            color: #E11C5B;
+            font-weight: 200;
+            letter-spacing: 1px;
+        }
+    
+        p {
+            text-align: left;
+            font-size: 2rem;
+            font-family: 'Playfair Display', serif;
+            padding: 0;
+            margin: 0;
+        }
+        
+    }
+     
+    .arrow {
+        height: 10%;
+        margin-left: 80%;
+        margin-bottom: 5%;
+    }
+    
+    .card-1, .card-2, .card-3 {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        margin: 2.5%;
+        padding: 0;
+    }
+    
+    .inner-news {
+        padding: 5%;
+        margin: 0 10% 25% 0;
+    }
+
+    .card-1 .inner-news {
+        padding: 5%;
+        margin: 0 10% 15% 0;
+    }
 }

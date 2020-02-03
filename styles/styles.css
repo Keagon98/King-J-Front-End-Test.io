@@ -683,17 +683,112 @@ section .circle-gradient {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  height: 120vh;
+}
+
+.latest h2 {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: .5rem;
+  color: #E11C5B;
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+
+.latest p {
+  margin-left: -5%;
+  text-align: left;
+  font-family: 'Playfair Display', serif;
+  padding: .5rem;
+}
+
+.arrow {
+  margin-left: 70%;
+}
+
+.card-1, .card-2, .card-3 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 10%;
+  padding: 10%;
+}
+
+.card-1 {
+  background-image: url("../kjd-assets/bg-square-gradient.png");
+}
+
+.card-2 {
+  background-image: url("../kjd-assets/bg-rectangle-gradient.png");
+}
+
+.card-3 {
+  background-image: url("../kjd-assets/bg-circle-gradient.png");
+}
+
+/*************************
+
+Desktop view
+
+*************************/
+@media only screen and (min-width: 992px) {
+  .latest {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0 4em;
+    height: 60vh;
+  }
+  .latest h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: .7em;
+    color: #E11C5B;
+    font-weight: 200;
+    letter-spacing: 1px;
+  }
+  .latest p {
+    text-align: left;
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    padding: 0;
+    margin: 0;
+  }
+  .arrow {
+    height: 10%;
+    margin-left: 80%;
+    margin-bottom: 5%;
+  }
+  .card-1, .card-2, .card-3 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin: 2.5%;
+    padding: 0;
+  }
+  .inner-news {
+    padding: 5%;
+    margin: 0 10% 25% 0;
+  }
+  .card-1 .inner-news {
+    padding: 5%;
+    margin: 0 10% 15% 0;
+  }
 }
 
 body {
