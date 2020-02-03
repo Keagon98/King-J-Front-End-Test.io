@@ -1,0 +1,27 @@
+footer {
+    
+    display: flex;
+    flex-direction: column;
+    background-color: $bgColour;
+
+    h2 {
+        color: #E11C5B;
+        font-weight: 200;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: 1px #fff solid;
+        margin: 10% 25%;
+    }
+
+    li {
+        position: relative;
+        line-height: 1.5rem;
+        font-size: .8rem;
+        text-align: center;
+        color: #fff;
+        list-style: none;
+        font-family: 'Montserrat', sans-serif;
+        margin-right: 12%;
+    }
+
+}
