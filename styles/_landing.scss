@@ -8,7 +8,7 @@
 .landing {
     @include flexContent(column);
     
-    background: url("/kjd-assets/hearo-top.jpg");
+    background: url("../kjd-assets/hearo-top.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
