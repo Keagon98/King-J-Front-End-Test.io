@@ -1,0 +1,201 @@
+
+.glyph-3 {
+    position: absolute;
+    z-index: 1;
+    margin-top: -23em;
+    height: 20%;
+}
+
+
+.ad-communi {
+
+    @include flexContent(row);
+
+    background-color: $bgColour;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 40%;
+    padding-bottom: 17%;
+    height: 100vh;
+}
+
+.hex-gradient {
+    position: absolute;
+    width: 30%;
+    top: 1%;
+    left: 10%;
+}
+
+section  {
+
+    margin: 0 6rem;
+  
+h1 {
+    position: absolute;
+    top: 5%;
+    left: 12%;
+    flex-wrap: wrap;
+    margin: 5%;
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: normal;
+    z-index: 2;
+    text-transform: capitalize;
+}
+
+p {
+    position: absolute;
+    text-align: left;
+    left: 6%;
+    bottom: 30%;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 10.5%;
+    font-size: .7rem;
+    color: #fff; 
+    line-height: 1.9em;
+    z-index: 1;
+}
+
+
+.glyph {
+    display: flex;
+    justify-content: flex-end;
+    left: 76%;
+    top: 19%;
+    position: absolute;
+    height: 10%;
+    z-index: 1;
+}
+
+
+.image-slider-1 {
+    max-width: 70%;
+    position: absolute;
+    top: 25%;
+    left: 20%;
+}
+
+.btn {
+    @include flexContent(row);
+    top: 70%;
+    position: absolute;
+    left: 17%;
+}
+
+.read-btn {
+    
+    @include button();
+    
+}
+
+img {
+    margin-left: -15px;
+}
+}
+.arrow-glyph {
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    height: 10%;
+
+
+}
+
+/*************************
+
+Desktop view
+
+*************************/
+
+@media only screen and (min-width: 992px) {
+
+    .glyph-3 {
+        position: absolute;
+        z-index: 1;
+        margin-top: -28em;
+        height: 20%;
+    }
+
+    .ad-communi {
+
+        @include flexContent(column);
+    
+        margin-top: 30%;
+        padding-bottom: 17%;
+        height: 120vh;
+
+    }
+    
+    
+    .hex-gradient {
+        position: absolute;
+        width: 30%;
+        top: 9%;
+        left: 25%;
+    }
+
+    .image-slider-1 {
+        max-width: 50%;
+        position: absolute;
+        margin-left: 16.2%;
+        margin-top: 1%;
+        
+    }
+
+    section {
+
+        margin: 0 6rem;
+      
+    h1 {
+        text-transform: capitalize;
+        top: 18%;
+        left: -37%;
+        margin: 0 50%;
+        font-size: 3.5rem;
+    }
+    
+    p {
+        left: -53%;
+        bottom: 54%;
+        font-size: .8rem; 
+        margin: 0 66%;
+        line-height: 1.9em;
+    }
+    
+    
+    .glyph {
+        left: 73.5%;
+        top: 20%;
+        position: absolute;
+        height: 13%;
+        z-index: 1;
+    }
+    
+    .btn {
+        @include flexContent(row);
+        top: 50%;
+        position: absolute;
+        left: 11%;
+    }
+    
+    }
+    .arrow-glyph {
+        position: absolute;
+        left: 30%;
+        top: 65.5%;
+        height: 13%;
+    
+    
+    }
+}
+
+@media only screen and (width: 1024px) {
+    .image-slider-1 {
+        max-width: 50%;
+        
+    }
+}
+
+
+

@@ -1,0 +1,217 @@
+.glyph-2 {
+    position: absolute;
+    z-index: 1;
+    bottom: 45%;
+    right: 15%;
+    height: 10%;
+}
+
+.data-ana {
+
+    @include flexContent(column);
+
+    background-color: #6F249B;
+    background-repeat: no-repeat;
+    position: relative;
+    padding-bottom: 17%;
+    height: 120vh;
+
+    h1 {
+    position: absolute;
+    top: 18%;
+    left: 12%;
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: normal;
+    z-index: 2;
+    text-transform: capitalize;
+    }
+
+    p {
+        position: absolute;
+        text-align: left;
+        left: 6%;
+        bottom: 32%;
+        font-family: 'Montserrat', sans-serif;
+        margin: 0 10.5%;
+        font-size: .7rem;
+        color: #fff; 
+        line-height: 1.9em;
+        z-index: 5;
+    }
+
+    
+}
+
+section {
+
+.btn-1 {
+    @include flexContent(row);
+    top: 70%;
+    position: absolute;
+    left: 17%;
+}
+
+.read-btn-2 {
+    
+    @include button();
+    
+}
+
+.arrow {
+    position: absolute;
+    top: 12px;
+    margin-left: 65px;
+    z-index: 2;
+}
+
+}
+
+
+
+.data-ana::before {
+    position: absolute;
+    background: #6F249B;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top left;
+    transform: skewY(-4deg);
+}
+
+.circle-gradient {
+    position: absolute;
+    width: 30%;
+    top: 13%;
+    left: 10%;
+}
+
+.image-slider-2 {
+    max-width: 70%;
+    position: absolute;
+    top: 30%;
+    left: 20%;
+}
+
+/*************************
+
+Desktop view
+
+*************************/
+
+@media only screen and (min-width: 992px) {
+    .data-ana {
+
+        @include flexContent(column);
+    
+        background-color: #6F249B;
+        background-repeat: no-repeat;
+        position: relative;
+        padding-bottom: 17%;
+        height: 120vh;
+    
+        h1 {
+        position: absolute;
+        top: 30%;
+        left: 7.5%;
+        font-family: 'Playfair Display', serif;
+        color: #fff;
+        font-size: 3.5rem;
+        font-weight: normal;
+        z-index: 2;
+        text-transform: capitalize;
+        }
+    
+        p {
+            position: absolute;
+            text-align: left;
+            left: 50%;
+            bottom: 39%;
+            font-family: 'Montserrat', sans-serif;
+            margin: 0 15%;
+            font-size: .9rem;
+            color: #fff; 
+            line-height: 1.9em;
+            z-index: 5;
+        }
+        
+        .glyph-2 {
+            position: absolute;
+            z-index: 1;
+            bottom: 16%;
+            right: 45%;
+            height: 10%;
+        }
+        
+    }
+    
+    section {
+    
+    .btn-1 {
+        @include flexContent(row);
+        top: 65%;
+        position: absolute;
+        left: 65%;
+    }
+    
+    .read-btn-2 {
+        
+        @include button();
+        
+    }
+    
+    .arrow {
+        position: absolute;
+        top: 12px;
+        margin-left: 65px;
+        z-index: 2;
+    }
+    
+    }
+    
+
+    
+    .data-ana::before {
+        position: absolute;
+        background: #6F249B;
+        content: "";
+        top: 0;
+        bottom: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform-origin: top left;
+        transform: skewY(-4deg);
+    }
+    
+    
+    .image-slider-2 {
+        max-width: 70%;
+        position: absolute;
+        top: 30%;
+        left: 15%;
+    }
+    
+}
+
+section {
+    .circle-gradient {
+        position: absolute;
+        width: 35%;
+        top: 18%;
+        left: 47%;
+    }
+}
+
+
+
+
+
+
+
+
+

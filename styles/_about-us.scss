@@ -1,0 +1,130 @@
+
+@mixin button() {
+    background-color: transparent;
+        border: 1.5px solid #E11C5B;
+        font-family: 'Montserrat', sans-serif;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 1em 3em;
+        font-size: .7rem;
+        text-align: center;
+        display: inline;
+}
+
+$bgColour :	#201728;
+
+.about-us {
+
+    @include flexContent(column);
+
+    background-color: $bgColour;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 80%;
+}
+
+    .discription {
+
+        @include flexContent(column);
+
+        background: #6F249B;
+        
+        padding: 1em;
+        position: absolute; 
+        margin: 0 5%;
+        top: -15%; 
+    }
+
+    .discription::before {
+        position: absolute;
+        background: #6F249B;
+        content: "";
+        top: 0;
+        bottom: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform-origin: top right;
+        transform: skewY(-4deg);
+
+    
+    }
+
+    p {
+        font-family: 'Playfair Display', serif;
+        color: #fff;
+        font-size: 1rem;
+        text-align: center;
+        margin: 0 2rem;
+    }
+
+    .btn {
+        @include flexContent(row);
+        margin-top: 5%;
+    }
+
+    .about-btn {
+        
+        @include button();
+        
+    }
+
+     .arrow-right {
+        margin-left: -20px;
+    }
+
+    .content {
+        z-index: 2;
+    }
+
+
+
+
+.about-us::before {
+    position: absolute;
+    background: $bgColour;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform-origin: top right;
+    transform: skewY(3deg);
+}
+
+/*************************
+
+Desktop view
+
+*************************/
+
+@media (min-width: 850px) {
+    .about-us {
+
+        top: 83%;
+    }
+
+    p {
+        font-size: 2.8rem;
+        margin:  4.5% 4.5% 0 4.5%;
+        text-align: center;
+        padding: .2em 0;
+    }
+
+    .discription {
+        
+        padding: 2% 0;
+        position: relative; 
+        margin: 0 17%;
+        top: -40%; 
+    }
+
+    .btn {
+        padding: 2em;
+        margin: 0;
+    }
+}
