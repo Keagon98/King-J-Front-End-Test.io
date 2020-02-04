@@ -822,6 +822,49 @@ footer li {
   margin-right: 12%;
 }
 
+/*************************
+
+Desktop view
+
+*************************/
+@media only screen and (min-width: 992px) {
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 4rem;
+  }
+  footer h2 {
+    color: #E11C5B;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: left;
+    border-bottom: 1px #fff solid;
+    font-size: 1.2rem;
+    margin: 0 5em;
+  }
+  footer ul li {
+    position: relative;
+    line-height: 1.5rem;
+    font-size: .8em;
+    text-align: left;
+    color: #fff;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 4.4em;
+  }
+}
+
 body {
   padding: 0;
   margin: 0;
