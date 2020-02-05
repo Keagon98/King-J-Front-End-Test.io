@@ -4,12 +4,14 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>King James Digital | Home</title>
-        <meta name="description" content="">
+        <meta name="description" content="King-James-Webpage">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
         <link rel="stylesheet" href="styles/styles.css">
-        <script src="https://kit.fontawesome.com/a255ceb981.js" crossorigin="anonymous"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script src="https://unpkg.com/scrollreveal"></script>
+        <link rel="icon" href="https://www.kingjames.co.za/assets/front/img/favicon.png" type="image/x-icon">
     </head>
     <body>
         <div class="container">
@@ -32,8 +34,8 @@
                 <div class="logo">
                     <img src="kjd-assets/kjd-logo.png" alt="kjd-logo">
                 </div>
-                <div class="scroll">
-                    <img src="kjd-assets/arrow-down.png" alt="">
+                <div class="scroll bounce">
+                    <a href="#ad-c" ><img src="kjd-assets/arrow-down.png" alt=""></a>
                 </div>
             </div>
 
@@ -43,7 +45,11 @@
                 <p>
                     We offer an interconnected set of services to help our clients respond to the disruptions and seize the opportunities of the digital age.
                 </p>
-                <div class="btn">
+                <div data-aos="slide-in-left"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="false"class="btn">
                 <button class="about-btn">About us </button><img class="arrow-right" src="kjd-assets/arrow-right.png" alt="">
                 </div>
                 </div>
@@ -53,21 +59,26 @@
             
         </div>
 
-            <div class="ad-communi">
+            <div class="ad-communi" id="ad-c">
                 <img class="glyph-3" src="kjd-assets/glyph-3.png" alt="">
                 <section>
                     <img class="hex-gradient" src="kjd-assets/hex-gradient.png" alt="">
-                    <h1>
+                    <h1 class="slide-left-ad">
                         Advertising communications
                     </h1>
-                    <p>
+                    <p class="slide-left-ad">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa omnis quis, odio a suscipit recusandae porro eius quidem, tempore quas corporis, aut delectus repudiandae. Nobis nemo tempora quod vitae commodi!
                     </p>
-                    <div class="btn">
+                    <div data-aos="slide-right"
+                    data-aos-duration="1300"
+                    data-aos-easing="ease-in-out"
+                    data-aos-mirror="true"
+                    data-aos-once="true"
+                    class="btn">
                         <button class="read-btn">Read more </button><img src="kjd-assets/arrow-right.png" alt="">
                         </div>
                     <img class="arrow-glyph" src="kjd-assets/arrow-glyph.png" alt="">
-                </section>
+                    </section>
                 
                 <section>
                 <img class="glyph" src="kjd-assets/glyph.png" alt="">
@@ -79,13 +90,18 @@
             <div class="data-ana">
                 <section>
                     <img class="circle-gradient" src="kjd-assets/circle-gradient.png" alt="">
-                    <h1>
+                    <h1 class="slide-right-data">
                         Data analytics
                     </h1>
-                    <p>
+                    <p class="slide-right-data">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa omnis quis, odio a suscipit recusandae porro eius quidem, tempore quas corporis, aut delectus repudiandae. Nobis nemo tempora quod vitae commodi!
                     </p>
-                    <div class="btn-1">
+                    <div data-aos="slide-left"
+                    data-aos-duration="1400"
+                    data-aos-easing="ease-in"
+                    data-aos-mirror="true"
+                    data-aos-once="true"
+                    class="btn-1">
                     <button class="read-btn-2">Read more <img class="arrow" src="kjd-assets/arrow-right.png" alt=""></button>
                     </div>
                 </section>
@@ -96,7 +112,12 @@
             </div>
 
             <div class="latest">
-                <div class="card-1">
+                <div data-aos="flip-left"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                 class="card-1">
                     <div class="inner-news">
                     <h2>
                         Latest news
@@ -108,7 +129,12 @@
                     <img class="arrow" src="kjd-assets/arrow-right.png" alt="">
                 
                 </div>
-                <div class="card-2">
+                <div data-aos="flip-right"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                class="card-2">
                     <div class="inner-news">
                     <h2>
                         Latest work
@@ -120,7 +146,12 @@
                     <img class="arrow" src="kjd-assets/arrow-right.png" alt="">
                 
                 </div>
-                <div class="card-3">
+                <div data-aos="flip-right"
+                data-aos-duration="2000"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                class="card-3">
                     <div class="inner-news">
                     <h2>
                         Latest careers
@@ -135,7 +166,12 @@
             </div>
 
             <footer>
-                <div class="info-1">
+                <div data-aos="zoom-in-up"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                class="info-1">
                     <h2>
                         Cape Town
                     </h2>
@@ -148,7 +184,12 @@
                         </li>
                     </ul>
                 </div>
-                <div class="info-2">
+                <div data-aos="zoom-in-up"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                class="info-2">
                     <h2>
                         Joburg
                     </h2>
@@ -161,7 +202,12 @@
                         </li>
                     </ul>
                 </div>
-                <div class="info-3">
+                <div data-aos="zoom-in-up"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                class="info-3">
                     <h2>
                         Media & Data
                     </h2>
@@ -174,7 +220,12 @@
                         </li>
                     </ul>
                 </div>
-                <div class="info-4">
+                <div data-aos="zoom-in-up"
+                data-aos-duration="1500"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-once="true"
+                class="info-4">
                     <h2>
                         Connect
                     </h2>
