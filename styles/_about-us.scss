@@ -89,7 +89,7 @@ Desktop view
 
 *************************/
 
-@media (min-width: 992px) {
+@media screen and (min-device-width: 800px) and (max-device-width: 2560px) {
     .about-us {
 
         top: 83%;
