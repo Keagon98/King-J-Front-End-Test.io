@@ -84,9 +84,9 @@ AOS.init({
   
   });
 
-let navWrapper = document.querySelector('.nav-wrapper'),
-navToogler =  document.querySelector('.nav-toogler')
+  let mainNav = document.getElementById("js-menu");
+let navBarToggle = document.getElementById("js-navbar-toggle");
 
-navToogler.addEventListener('click', function (event) {
-navWrapper.classList.toggle('active')
-})
+navBarToggle.addEventListener("click", function() {
+  mainNav.classList.toggle("active");
+});
