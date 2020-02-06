@@ -12,28 +12,32 @@ sr.reveal('.content', {
     duration: 2000,
     origin: 'right',
     distance: '400px',
-    viewFactor: 0.2
+    viewFactor: 0.2,
+    reset: true
 });
 
 sr.reveal('h1', {
     duration: 2000,
     origin: 'left',
     distance: '200px',
-    viewFactor: 0.2
+    viewFactor: 0.2,
+    reset: true
 });
 
 sr.reveal('p', {
     duration: 2000,
     origin: 'left',
     distance: '200px',
-    viewFactor: 0.2
+    viewFactor: 0.2,
+    reset: true
 });
 
 sr.reveal('.image-slider-1', {
     duration: 2000,
     origin: 'right',
     distance: '200px',
-    viewFactor: 0.2
+    viewFactor: 0.2,
+    reset: true
 });
 
 sr.reveal('.glyph', {
@@ -41,14 +45,16 @@ sr.reveal('.glyph', {
     origin: 'top',
     delay: 500,
     distance: '200px',
-    viewFactor: 0.2
+    viewFactor: 0.2,
+    reset: true
 });
 
 sr.reveal('.image-slider-2', {
     duration: 2000,
     origin: 'left',
     distance: '400px',
-    viewFactor: 0.2
+    viewFactor: 0.2,
+    reset: true
 });
 
 sr.reveal('.slide-right-data', {
@@ -56,7 +62,8 @@ sr.reveal('.slide-right-data', {
     origin: 'right',
     delay: 500,
     distance: '400px',
-    viewFactor: 0.2
+    viewFactor: 0.2,
+    reset: true
 });
 
 AOS.init();
