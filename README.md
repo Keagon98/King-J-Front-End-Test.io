@@ -4,9 +4,11 @@
 
 ## Built using:
 
->HTML5
->CSS3/SCSS
->JavaScript
+> HTML5
+
+> CSS3/SCSS
+
+> JavaScript
 
 ## Author
 
